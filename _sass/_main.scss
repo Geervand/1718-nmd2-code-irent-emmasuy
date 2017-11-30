@@ -54,3 +54,23 @@ border-bottom: 2px solid #ffffff !important;
 color: #515151 !important;
 text-shadow: none !important;
 }
+
+
+/* SCROL ARROW
+-------------------------------------------------- */
+
+.height {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .image {
+    width: auto;
+    height: 100%;
+    background-image: url(../imgages/te_laat_konijn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+  }
