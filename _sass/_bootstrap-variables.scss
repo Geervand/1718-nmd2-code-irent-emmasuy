@@ -18,9 +18,13 @@
 @import url('https://fonts.googleapis.com/css?family=Finger+Paint');
 
 $font-family-base: "Cabin";
-$h2-font: "Finger Paint";
 
-$h2-font-family:"Finger Paint";
 
-$display-4:"Finger Paint";
+$theme-colors: (
+    "warning": rgb(239, 175, 30),
+    "light": rgb(122, 110, 141),
+    "success": rgb(239, 237, 205)
+  );
+
+
 

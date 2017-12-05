@@ -1,8 +1,8 @@
- <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+ <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> 
     
     <!-- Image and text -->
         <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-white" href="#">
           <img src="{{ site.baseurl }}/images/websitelogo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
           Minuten
         </a>
@@ -35,7 +35,7 @@
                   </li>
               {% else %}
                   <li class="nav-item{{ class }}">
-                      <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                      <a class="nav-link text-white" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                   </li>
               {% endif %}
           {% endfor %}
