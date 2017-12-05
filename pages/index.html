@@ -6,7 +6,6 @@ navigation: yes
 # ─────────────────────
 title: Minuten
 ---
-<!--<nav class="sticky-top"></nav>-->
 
     <div class="wrapper" style="height:700px">
         <div class= "mw-100 mh-100">
@@ -65,7 +64,7 @@ title: Minuten
         </div>
 
         <div class="container-fluid mt-3 pt-3">
-            <div class="row mt-3 pt-3  mb-3 pb-3">
+            <div class="row mt-3 pt-3 mb-3 pb-3">
                     <div class="col-12 bg-warning">
                             <p>
                             </p>
@@ -75,16 +74,29 @@ title: Minuten
                             Het enige dat jij moet doen is op onderstaande button klikken en hopen.</p>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="button" class="btn btn-white"><h2 class="display-4">Win 5 minuten tijd</h2></button>
+                        <button type="button" class="btn btn-white" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2 class="display-4">Win 5 minuten tijd</h2></button>
                     </div>
-                    <div class="col-12 bg-warning">
-                        <p>
-                        </p>
+                    <div class="collapse bg-light mx-auto" id="collapseExample">
+                        <div class="card card-body bg-light text-white">
+                        Laat je e-mailadres achter en wij contacteren de gelukkige winnaars op het einde van de maand.
+                        <div class="form-group bg-light">
+                            <div class="form-group">
+                                <label class="text-white" for="exampleInputEmail1"></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="typ hier je e-mailadres">
+                                <small id="emailHelp" class="form-text text-white">Wij delen nooit deze informatie met derden.</small>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="right" data-content="We hebben je gegevens goed ontvangen, dankjewel.">Verzend</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="col-12 bg-warning mb-3 pb-3">
+                    <div class="col-12 bg-warning mb-3 pb-3 mt-3 pt-3">
                             <p>
                             </p>
                     </div>
             </div>
         </div>
     </div>
+
+    
