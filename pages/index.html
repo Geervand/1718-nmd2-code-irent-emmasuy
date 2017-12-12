@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index-default
 permalink: index
 # Custom Page Variables
 navigation: yes
@@ -7,47 +7,109 @@ navigation: yes
 title: Minuten
 ---
 
-<!--<div class="wrapper" style="height:700px">
-        <div class= "mw-100 mh-100">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="embed-responsive embed-responsive-21by9">
-                        <iframe src="https://giphy.com/embed/Ey0rfORLJYHFm" width="320" width-md="640" height="180" height-md="358,67" frameBorder="0" class="giphy-embed embed-responsive-item" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/countdown-Ey0rfORLJYHFm"></a></p>
-                    </div>
-                    <div class="section section-header">
-                        <p class="text-white bg-dark">
-                            Dju, weer tien seconden verspilt!<br>
-                            Win of koop je tijd hieronder terug
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-                <div class="embed-responsive embed-responsive-21by9">
+
+<div class="container-fluid" id="guide-template">
+    <div class="row pt-3 bg-lightblue">
+                <div class=" col-12 embed-responsive embed-responsive-21by9">
                     <iframe src="https://giphy.com/embed/Ey0rfORLJYHFm" width="320" width-md="640" height="180" height-md="358,67" frameBorder="0" class="giphy-embed embed-responsive-item" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/countdown-Ey0rfORLJYHFm"></a></p>
                 </div>
-                <div class="bg-dark">
-                    <p class="text-white ">
+                <div class="col-md-6 bg-black"></div>
+                <div class="col-12 col-md-6 bg-lightblue mb-3 pb-3">
+                    <p class="text-white">
                         Dju, weer tien seconden verspilt!<br>
                         Win of koop je tijd hieronder terug
                     </p>
                 </div>
-        </div>
         
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top text-white justify-content-end mt-3 pt-3"> 
+        
+        <!-- Image and text -->
+            <nav class="navbar navbar-dark bg-dark>
+            <a class="navbar-brand text-white" href="index.html">
+              <img src="{{ site.baseurl }}/images/websitelogo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                Minuten
+            </a>
+        </nav>
+    
+        <div class="d-none d-xs-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <a href="winkelmandje.html">
+            <img src="{{ site.baseurl }}/images/winkelmandje.svg" width="30" height="30" alt="konijn" class="mr-3">
+        </a>
+        </div>
+    
+        <!-- hamburger icoon -->
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- hoofdnavigatie -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              {% assign links = site.data.navigation %}
+              {% for link in links %}
+                  {% assign class = nil %}
+                  {% if link.url contains page.url %}
+                      {% assign class = 'active' %}
+                  {% endif %}
+                  {% if link.sublinks %}
+                      <li class="nav-item dropdown {{ class }}">
+                          <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              {% for sublink in link.sublinks %}
+                                      <li class="dropdown-item">
+                                          <a class="nav-link" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                      </li>
+                              {% endfor %}
+                          </ul>
+                      </li>
+                  {% else %}
+                      <li class="nav-item{{ class }}">
+                          <a class="nav-link text-white" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+        </div>
+    
+        <div class="d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <a href="winkelmandje.html" class="hidden-sm-down">
+                <img src="{{ site.baseurl }}/images/winkelmandje.svg" width="30" height="30" alt="konijn" class="mr-3">
+        </a>
+        </div>
+      </nav>
+    
     
 
 
-    <div class="wrapper">
+
+
+
+
+
+
+
+
+
+
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 mt-3 pt-3">
+            <div class="row mt-3 pt-3">
+                <div class="col-12 col-md-6 mt-3 pt-3 mb-3 pb-3">
                         <h1 class="display-1">Minuten</h1>
                         <p>Hoofdzakelijk bedoeld voor de tijdsoptimisten onder ons. <br>
                             Daar is niets mis mee. <br>
@@ -56,7 +118,7 @@ title: Minuten
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row mt-3 pt-3 mb-3 pb-3">
                 <div class="col-md-6 bg-success">
                 </div>
                 <div class="col-12 col-md-6 bg-success">
@@ -75,13 +137,7 @@ title: Minuten
                 </div>
             </div>
         </div>
-        <!--div class="container-fluid mb-3 pb-3">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="display-4 bg-success mb-3 pb-3" style="height:50px; margin-top: -40px;"></h2>
-                    </div>
-                </div>
-        </div -->
+
         <div class="container">
             <div class="row" id="content">
                 <div class="col-12 col-md-6">
@@ -103,12 +159,12 @@ title: Minuten
                             <p>
                             </p>
                     </div>
-                    <div class="col-12 text-center bg-warning text-dark">
+                    <div class="col-12 text-center bg-warning text-black">
                         <p>Wij geven om jouw productiviteit. Daarom maak jij kans op vijf minuten van onze tijd! <br>
                             Het enige dat jij moet doen is op onderstaande button klikken en hopen.</p>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="button" class="btn bg-white" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2 class="display-4">Win 5 minuten tijd</h2></button>
+                        <button type="button" class="btn bg-white kleintje" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2 class="display-4">Win 5 minuten</h2></button>
                     </div>
                     <div class="collapse bg-light mx-auto" id="collapseExample">
                         <div class="card card-body bg-light text-white">
@@ -119,10 +175,29 @@ title: Minuten
                                     <label class="text-white" for="exampleInputEmail1"></label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="typ hier je e-mailadres">
                                     <small id="emailHelp" class="form-text text-white">Wij delen nooit deze informatie met derden.</small>
-                                
-                                                            </div>
+                            </div>
                             <div>
-                                <button type="submit" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="right" data-content="We hebben je gegevens goed ontvangen, dankjewel.">Verzend</button>
+                                <button type="button" class="btn btn-success" data-target="#exampleModal" data-toggle="modal">Verzend</button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title text-black">Bedankt!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body text-black">
+                                        <p> We hebben je gegevens goed ontvangen, als je bij de gelukkigen bent dan hoor je van ons op de laatste dag van deze maand. </p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Terug naar de website</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
 
                         </div>
@@ -135,6 +210,6 @@ title: Minuten
                     </div>
             </div>
         </div>
-    </div>
+    
 
     
