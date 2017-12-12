@@ -5,10 +5,16 @@
   }
 
   .display-1 {
-    font-family: "Finger Paint"
+    font-family: "Finger Paint";
+    font-size: 4rem;
   }
 
+h2.display-4 {
+  /*border-bottom: solid 50px red;*/
+  background: url(../images/lijntje-h2.png) repeat-x center bottom;
+  padding-bottom: 25px;
 
+}
 
 
 
@@ -16,3 +22,21 @@
 -------------------------------------------------- */
 
 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .display-1 {
+    font-size: 8rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
