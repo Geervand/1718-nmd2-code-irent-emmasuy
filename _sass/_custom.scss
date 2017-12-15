@@ -1,4 +1,6 @@
-
+.display-3 {
+  font-size: 2.5rem;
+}
 
 .display-4 {
     font-family: "Finger Paint";
@@ -14,29 +16,44 @@ h2.display-4 {
   /*border-bottom: solid 50px red;*/
   background: url(../images/lijntje-h2.png) repeat-x center bottom;
   padding-bottom: 25px;
-
-}
-
-.kleintje {
-  width: 100%;
 }
 
 
 
+.hover01 {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 
 
 
+.lead {
+  column-count: 1;
+}
+
+blockquote {
+  background: rgb(239, 237, 205);
+  background-image: url(../images/aanhalingstekens_voor.png), url(../images/aanhalingstekens_achter.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 150px;
+}
 
 
 
+#giphy-embed svg {
+  display: none;
+}
 
 
-
-
-
-
-
-
+a:hover, a:focus {
+  text-decoration: none;
+}
 
 
 
@@ -65,11 +82,16 @@ h2.display-4 {
     font-size: 3.5rem;
   }
 
-  .kleintje {
-    width:562.95px;
-    height:114.2px;
+  .display-3 {
+    font-size: 5rem;
+  }
+
+    .lead {
+      column-count: 2;
+      column-gap: 50px;
     }
 }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  }

@@ -106,19 +106,94 @@ title: Nog even je bestelgegevens
                   </form>
             
             </div>
-        </div>
-
-
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-12 col-md-4">
-                    <a href="afrekenen.html"><button type="button" class="btn btn-warning btn-block rounded-0">Ga verder met afrekenen</button></a>
-                </div>
             </div>
-            <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-12 col-md-4 mt-3 mb-3 pb-3">
-                        <a href="winkelmandje.html"><button type="button" class="btn btn-warning btn-block rounded-0">Ga terug naar je winkelmandje</button></a>
+
+            <form>
+                    <div class="row">
+                        <div class="col-md-4"></div> <!--deze col dient ervoor te zorgen dat alle gegevens in de tweede col staan-->
+                            <div class="col-12 col-md-4">
+                                        <div class="form-check">
+                                            <label class="form-check-label"><p>Hoe wenst u te betalen?</p>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                    <img src="{{ site.baseurl }}/images/bancontact.png" width="50px" alt="bancontact">
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                    <img src="{{ site.baseurl }}/images/mastercard.png" width="40px" alt="mastercard">
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                                                    <img src="{{ site.baseurl }}/images/visa.png" width="50px" alt="visa">
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked>
+                                                    <img src="{{ site.baseurl }}/images/paypal.png" width="60px" alt="paypal">
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+                <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <button type="button" data-target="#exampleModal3" data-toggle="modal" class="btn btn-warning btn-block rounded-0">Afrekenen (werkend)</button>
+                            <!-- Modal -->
+                            <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal3">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title text-black">Bedankt voor uw aankoop!</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body text-black">
+                                          <p> Als we je aankoop hebben ontvangen, wordt deze verwerkt en krijgt u een mail toegestuurd. <br>
+                                            In deze mail zal u een link terugvinden. Indien u uw tijd wenst te gebruiken klikt u op de link en de tijd wordt geactiveerd.<br>
+                                            <strong>Veel plezier en graag tot een volgende keer!</strong></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-success" data-dismiss="modal">Terug naar de website</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3 pb-3">
+                                <a href="afrekenen.html"><button type="button" class="btn btn-warning btn-block rounded-0">Afrekenen (niet werkend)</button></a>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mb-3 pb-3">
+                                <a href="winkelmandje.html"><button type="button" class="btn btn-warning btn-block rounded-0">Ga terug naar je winkelmandje</button></a>
+                            </div>
                     </div>
                 </div>
-        </div>
+
+
+
+
+</div>
