@@ -1,79 +1,61 @@
-.display-3 {
-  font-size: 2.5rem;
-}
 
-.display-4 {
-    font-family: "Finger Paint";
+  .display-3 {
     font-size: 2.5rem;
   }
-
-  .display-1 {
-    font-family: "Finger Paint";
-    font-size: 4rem;
+  
+  .display-4 {
+      font-family: "Finger Paint";
+      font-size: 2.5rem;
+    }
+  
+    .display-1 {
+      font-family: "Finger Paint";
+      font-size: 4rem;
+    }
+  
+  h2.display-4 {
+    /*border-bottom: solid 50px red;*/
+    background: url(../images/lijntje-h2.png) repeat-x center bottom;
+    padding-bottom: 25px;
   }
-
-h2.display-4 {
-  /*border-bottom: solid 50px red;*/
-  background: url(../images/lijntje-h2.png) repeat-x center bottom;
-  padding-bottom: 25px;
-}
+  
+  
 
 
-
-.hover01 {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.hover01 {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-
-
-
-.lead {
-  column-count: 1;
-}
-
-blockquote {
-  background: rgb(239, 237, 205);
-  background-image: url(../images/aanhalingstekens_voor.png), url(../images/aanhalingstekens_achter.png);
-  background-repeat: no-repeat;
-  background-position: left top, right bottom;
-  background-size: 150px;
-}
-
-
-
-#giphy-embed svg {
-  display: none;
-}
-
-
-a:hover, a:focus {
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// Extra small devices (portrait phones, less than 576px)
+  
+  .lead {
+    column-count: 1;
+  }
+  
+  blockquote {
+    background: rgb(239, 237, 205);
+    background-image: url(../images/aanhalingstekens_voor.png), url(../images/aanhalingstekens_achter.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: 150px;
+  }
+  
+  
+  
+  #giphy-embed svg {
+    display: none;
+  }
+  
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  
+  
+  // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .display-1 {
     font-size: 6rem;
   }
@@ -90,11 +72,17 @@ a:hover, a:focus {
       column-count: 2;
       column-gap: 50px;
     }
-}
-
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }
+  
+  
+  
+  
+  
+  
+  
