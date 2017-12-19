@@ -20,7 +20,27 @@
   }
   
   
+  .nav-item {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-right: 2px;
+    border-right-color: white;
+    border-right-style: solid;
+    border-left: 2px;
+    border-left-color: white;
+    border-left-style: solid;
+  }
 
+  .nav-itemactive {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-right: 2px;
+    border-right-color: white;
+    border-right-style: solid;
+    border-left: 2px;
+    border-left-color: white;
+    border-left-style: solid;
+  }
 
   
   .lead {
