@@ -23,10 +23,7 @@
   .nav-item {
     padding-left: 3rem;
     padding-right: 3rem;
-    border-right: 2px;
-    border-right-color: white;
-    border-right-style: solid;
-    border-left: 2px;
+    border-left: 1px;
     border-left-color: white;
     border-left-style: solid;
   }
@@ -34,18 +31,23 @@
   .nav-itemactive {
     padding-left: 3rem;
     padding-right: 3rem;
-    border-right: 2px;
-    border-right-color: white;
-    border-right-style: solid;
-    border-left: 2px;
+    border-left: 1px;
     border-left-color: white;
     border-left-style: solid;
   }
 
   
-  .lead {
+  .lead- {
     column-count: 1;
+    -moz-column-fill: balance; /* Firefox */
+    column-fill: balance;
   }
+
+  .lead-slagzin {
+    -webkit-column-span: all;
+    column-span: all;
+  }
+
   
   blockquote {
     background: rgb(239, 237, 205);
@@ -88,10 +90,19 @@
     font-size: 5rem;
   }
 
-    .lead {
+    .lead- {
       column-count: 2;
       column-gap: 50px;
+      -moz-column-fill: balance; /* Firefox */
+      column-fill: balance;
     }
+
+    .lead-slagzin {
+      -webkit-column-span: all;
+      column-span: all;
+    }
+
+
  }
 
 // Large devices (desktops, 992px and up)
